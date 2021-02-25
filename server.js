@@ -1,7 +1,7 @@
-const express = require('express');
-const { animals } = require('./data/animals');
 const fs = require('fs');
 const path = require('path');
+const express = require('express');
+const { animals } = require('./data/animals');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -96,7 +96,7 @@ app.post('/api/animals', (req, res) => {
   } else {
     // add animal to json file and animals array in this function
     const animal = createNewAnimal(req.body, animals);
-    res.json(req.body);
+    res.json(animal);
   }
 });
 
