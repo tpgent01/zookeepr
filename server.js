@@ -10,6 +10,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+// access front-end code in public folder
+app.use(express.static('public'));
 
 function filterByQuery(query, animalsArray) {
   let personalityTraitsArray = [];
