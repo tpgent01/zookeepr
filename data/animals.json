@@ -108,15 +108,6 @@
         "loving"
       ],
       "id": "10"
-    },
-    {
-      "name": "Taylor",
-      "species": "Dog",
-      "diet": "carnivore",
-      "personalityTraits": [
-        "zany"
-      ],
-      "id": "11"
     }
   ]
 }
